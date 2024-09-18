@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            /* background-color: black; */
+            height: 40vh;
+            width: 40vw; 
+            display: grid;
+            gap: 5px;
+            grid-template-columns: repeat(3,1fr);
+        }
+        
+        .grid{
+            background-color: rgb(0, 0, 0);
+            width: 30vw;
+            height: 30vh;
+            display: grid;
+            gap: 5px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+      .item1{
+        background-color: brown;
+      }
+      .item2{
+        background-color: chartreuse;
+      }
+      .item3{
+        background-color: orange;
+      }
+      .item4{
+        background-color: green;
+      }
+      .item5{
+        background-color: darkslategray;
+      }
+      .item6{
+        background-color: sandybrown;
+      }
+      .grid2{
+            background-color: rgb(0, 0, 0);
+            width: 30vw;
+            height: 30vh;
+            display: grid;
+            gap: 5px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .box1{
+            background-color: red;
+            grid-column: 1/3;
+        }
+        .box2{
+            background-color: green;
+            grid-column: 3/4;
+            grid-row: 1/3;
+        }
+        .box3{
+            background-color: orange;
+    
+        }
+        .box4{
+            background-color: darkcyan;
+        }
+.grid3{
+    background-color: rgb(0, 0, 0);
+            width: 30vw;
+            height: 30vh;
+            display: grid;
+            gap: 5px;
+            grid-template-columns: 1fr 1fr 1fr;
+}
+.box11{
+    background-color: red;
+    grid-column: 1/4
+}
+.box21{
+    background-color: orange;
+}
+.box31{
+    background-color: green;
+    grid-column: 2/4;
+}
+.box41{
+    background-color: lightpink;
+    grid-column: 1/4;
+}
+.grid4{
+    background-color: rgb(7, 8, 8);
+            width: 30vw;
+            height: 30vh;
+            display: grid;
+            gap: 5px;
+            grid-template-columns: 1fr 1fr 1fr;
+}
+.boxs1{
+    background-color: red;
+    grid-column: 1/3;
+}
+.boxs2{
+    background-color: orange;
+}
+.boxs3{
+    background-color: green;
+}
+.boxs4{
+    background-color: pink;
+    grid-column: 2/4;
+}
+.boxs5{
+    background-color: darkcyan;
+    grid-column: 1/4;
+}
+.grid5{
+    background-color: rgb(0, 0, 0);
+            width: 30vw;
+            height: 30vh;
+            display: grid;
+            gap: 5px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+}
+.boxa1{
+    background-color: red;
+}
+.boxa2{
+    background-color: orange;
+}
+.boxa3{
+    background-color: green;
+}
+.boxa4{
+    background-color: red;
+}
+.boxa5{
+    background-color: orange;
+}
+.boxa6{
+    background-color: green;
+}
+.boxa7{
+    background-color: orangered;
+}
+.boxa8{
+    background-color: cadetblue;
+}
+.boxa9{
+    background-color: orange;
+}
+.boxaa{
+    background-color: green;
+}
+.boxab{
+    background-color: pink;
+}
+.boxac{
+    background-color: green;
+}
+.boxad{
+    background-color: green;
+}
+.boxae{
+    background-color: orange;
+}
+.boxaf{
+    background-color: pink;
+}
+.boxag{
+    background-color: orange;
+}
+.boxah{
+    background-color: green;
+}
+.boxai{
+    background-color: pink;
+}
+.grid6{
+    background-color: rgb(28, 38, 38);
+            width: 30vw;
+            height: 30vh;
+            display: grid;
+            gap: 5px;
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+.a{
+    background-color: orange;
+    grid-column: 1/3;
+}
+.b{
+    background-color: pink;
+}
+.c{
+    background-color: green;
+}
+.d{
+    background-color: darkcyan;
+}
+.e{
+    background-color: orange;
+}
+.f{
+    background-color: rgb(208, 20, 51);
+}
+.g{
+    background-color: none;
+}
+.h{
+    background-color: orange;
+    grid-column: 1/3;
+    grid-row: 3/5;
+}
+.i{
+    background-color: green;
+}
+.j{
+    background-color: pink;
+}
+.k{
+    background-color: red;
+}
+.l{
+    background-color: none;
+}
+.m{
+    background-color: green;
+    grid-column: 1/4;
+}
+.n{
+    background-color: orange;
+}
+.grid7{
+    background-color: rgb(7, 10, 10);
+            width: 30vw;
+            height: 30vh;
+            display: grid;
+            gap: 5px;
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            grid-template-rows: 1fr 1fr 1fr ;
+}
+.ra{
+    background-color: orange;
+    grid-column: 1/3;
+}
+.rb{
+    background-color: red;
+    grid-column: 3/5;
+}
+.rc{
+    background-color: pink;
+    grid-row: 2/4;
+    grid-column: 1/3
+}
+.rd{
+    background-color: green;
+    grid-column: 3/5;
+}
+.re{
+    background-color: grey;
+}
+.rf{
+    background-color: orange;
+}
+.grid8{
+    background-color: rgb(17, 23, 23);
+            width: 30vw;
+            height: 30vh;
+            display: grid;
+            gap: 5px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr ;
+}
+.l1{
+    background-color: orange;
+}
+.l2{
+    background-color: green;
+}
+.l3{
+    background-color: pink;
+}
+.l4{
+    background-color: grey;
+}
+.l5{
+    background-color: brown;
+}
+.l6{
+    background-color: grey;
+}
+.l7{
+    background-color: red;
+}
+.l8{
+    background-color: lightcoral;
+    grid-column: 3/6;
+}
+.l9{
+    background-color: orange;
+    grid-column: 1/6;
+}
+.grid9{
+    background-color: rgb(18, 21, 21);
+    height: 30vh;
+    width: 30vw;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.t1{
+    background-color: orange;
+    grid-column: 1/4;
+}
+.t2{
+    background-color: green;
+    grid-row: 2/4;
+}
+.t3{
+    background-color: grey;
+    grid-column: 2/4;
+}
+.t4{
+    background-color: pink;
+}
+.t5{
+    background-color: red;
+}
+   </style>
+</head>
+<body>
+    <div class="main">
+    <div class="grid">
+            <div class="item item1"></div>
+            <div class="item item2"></div>
+            <div class="item item3"></div>
+            <div class="item item4"></div>
+            <div class="item item5"></div>
+            <div class="item item6"></div>
+        </div>
+        <div class="grid2"> 
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+    <div class="grid3">
+        <div class="box11"></div>
+        <div class="box21"></div>
+        <div class="box31"></div>
+        <div class="box41"></div>
+    </div>
+    <div class="grid4">
+        <div class="boxs1"></div>
+        <div class="boxs2"></div>
+        <div class="boxs3"></div>
+        <div class="boxs4"></div>
+        <div class="boxs5"></div>
+    </div>
+    <div class="grid5">
+        <div class="boxa1"></div>
+        <div class="boxa2"></div>
+        <div class="boxa3"></div>
+        <div class="boxa4"></div>
+        <div class="boxa5"></div>
+        <div class="boxa6"></div>
+        <div class="boxa7"></div>
+        <div class="boxa8"></div>
+        <div class="boxa9"></div>
+        <div class="boxaa"></div>
+        <div class="boxab"></div>
+        <div class="boxac"></div>
+        <div class="boxad"></div>
+        <div class="boxae"></div>
+        <div class="boxaf"></div>
+        <div class="boxag"></div>
+        <div class="boxah"></div>
+        <div class="boxai"></div>
+    </div>
+    <div class="grid6">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="d"></div>
+        <div class="e"></div>
+        <div class="f"></div>
+        <div class="g"></div>
+        <div class="h"></div>
+        <div class="i"></div>
+        <div class="j"></div>
+        <div class="k"></div>
+        <div class="l"></div>
+        <div class="m"></div>
+        <div class="n"></div>
+    </div>
+    <div class="grid7">
+        <div class="ra"></div>
+        <div class="rb"></div>
+        <div class="rc"></div>
+        <div class="rd"></div>
+        <div class="re"></div>
+        <div class="rf"></div>
+    </div>
+    <div class="grid8">
+    <div class="l1"></div>
+    <div class="l2"></div>
+    <div class="l3"></div>
+    <div class="l4"></div>
+    <div class="l5"></div>
+    <div class="l6"></div>
+    <div class="l7"></div>
+    <div class="l8"></div>
+    <div class="l9"></div>
+    </div>
+    <div class="grid9">
+    <div class="t1"></div>
+    <div class="t2"></div>
+    <div class="t3"></div>
+    <div class="t4"></div>
+    <div class="t5"></div>
+    </div>
+</div>
+</body>
+</html>
